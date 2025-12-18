@@ -1,0 +1,119 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.input {
+  padding: 10px 11px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  outline: none;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease,
+    transform 0.08s ease;
+}
+
+.input::placeholder {
+  color: #6b7280;
+}
+
+.input:focus {
+  border-color: rgba(56, 189, 248, 0.85);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5), 0 0 0 8px rgba(56, 189, 248, 0.1);
+  background: rgba(15, 23, 42, 0.98);
+  transform: translateY(-0.5px);
+}
+
+.primaryButton {
+  margin-top: 4px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  background: radial-gradient(circle at 0% 0%, #22c55e, #22c55e 25%, #38bdf8 55%, #6366f1 100%);
+  color: #020617;
+  box-shadow: 0 14px 30px rgba(56, 189, 248, 0.45);
+  transition:
+    box-shadow 0.18s ease,
+    transform 0.12s ease,
+    filter 0.18s ease;
+}
+
+.primaryButton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.errorMessage {
+  margin-bottom: 4px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(248, 113, 113, 0.7);
+  background: rgba(127, 29, 29, 0.85);
+  color: #fecaca;
+  font-size: 0.82rem;
+}
+
+.helperText {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.logoutButton {
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(248, 113, 113, 0.85);
+  background: radial-gradient(circle at 0 0, rgba(248, 113, 113, 0.85), rgba(127, 29, 29, 0.95));
+  color: #fef2f2;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.12s ease,
+    box-shadow 0.18s ease;
+}
+
+.logoutButton:hover {
+  background: rgba(185, 28, 28, 0.9);
+  border-color: rgba(248, 113, 113, 1);
+  box-shadow: 0 10px 22px rgba(127, 29, 29, 0.7);
+}
+
+@media (max-width: 480px) {
+  .primaryButton,
+  .logoutButton {
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,56 @@
+/* Full-page background and centering for auth/dashboard layouts */
+
+.pageRoot {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at top left, #1e293b 0, #020617 45%, #020617 100%);
+  color: #e5e7eb;
+}
+
+.pageInner {
+  width: 100%;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.pageHeader {
+  text-align: center;
+}
+
+.appTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.appSubtitle {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .pageInner {
+    align-items: stretch;
+  }
+
+  .contentRow {
+    flex-direction: column;
+  }
+}
+
+
