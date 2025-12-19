@@ -184,7 +184,7 @@ AI tools significantly reduced development time for security-related boilerplate
 
 ## 📹 Demo Video
 
-📎 (Add your demo / screen recording link here)
+[▶️ Click here to watch the demo video](https://drive.google.com/file/d/1MXE0Jxs9uMe6Mm6iIAwYwN7yo3XyUPG9/view?usp=sharing)
 
 ---
 
